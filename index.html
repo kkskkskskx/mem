@@ -90,7 +90,7 @@ button:hover { transform: scale(1.05); box-shadow: 0 0 12px #ffd200; }
     </div>
 </div>
 
-<audio id="timer-sound" src="https://zvukipro.com/uploads/files/2020-02/1581007313_zvuk-chasov.mp3"></audio>
+<audio id="timer-sound" src="1581007313_zvuk-chasov.mp3"></audio>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -175,13 +175,13 @@ function checkAnswer(answerIndex, button){
 
     if(answerIndex===correctIndex){
         button.classList.add('correct');
-        new Audio("https://zvukipro.com/uploads/files/2018-10/1540308869_jg-032316-sfx-elearning-correct-answer-sound-1.mp3").play();
+        new Audio("1540308869_jg-032316-sfx-elearning-correct-answer-sound-1.mp3").play();
         score++;
         scoreDisplay.textContent="Бали: "+score;
     } else {
         button.classList.add('wrong');
         buttons[correctIndex].classList.add('correct');
-        new Audio("https://zvukipro.com/uploads/files/2018-10/1540308821_zvukovoy-effekt-nepravilnogo-otveta-wrong-buzzer-sound-effect.mp3").play();
+        new Audio("1540308821_zvukovoy-effekt-nepravilnogo-otveta-wrong-buzzer-sound-effect.mp3").play();
     }
     setTimeout(nextQuestion,1000);
 }
@@ -220,7 +220,7 @@ function startTimer(){
             clearInterval(timer);
             timerSound.pause();
             timerSound.currentTime=0;
-            const wrongSound = new Audio("https://zvukipro.com/uploads/files/2018-10/1540308821_zvukovoy-effekt-nepravilnogo-otveta-wrong-buzzer-sound-effect.mp3");
+            const wrongSound = new Audio("1540308821_zvukovoy-effekt-nepravilnogo-otveta-wrong-buzzer-sound-effect.mp3");
             wrongSound.play();
             wrongSound.addEventListener('ended', ()=>{
                 nextQuestion();
