@@ -236,7 +236,7 @@ function skipQuestion(){
     clearInterval(timer);
     timerSound.pause();
     timerSound.currentTime = 0;
-    const skipSound = new Audio("https://zvukipro.com/uploads/files/2018-10/1540308963_jg-032316-sfx-elearning-correct-answer-sound-3.mp3");
+    const skipSound = new Audio("1540308963_jg-032316-sfx-elearning-correct-answer-sound-3.mp3");
     skipSound.play();
     skipSound.addEventListener('ended', ()=>{
         nextQuestion();
