@@ -247,24 +247,6 @@ function skipQuestion(){
         nextQuestion();
     });
 }
-
-function switchTheme(){
-    const body=document.body;
-    const buttons=document.querySelectorAll('.switch-theme-button');
-    if(currentTheme==="dark"){
-        body.style.color="#333";
-        buttons.forEach(btn=>btn.innerHTML="🌛");
-        currentTheme="light";
-    } else {
-        body.style.color="#fff";
-        buttons.forEach(btn=>btn.innerHTML="☀️");
-        currentTheme="dark";
-    }
-}
-
-document.querySelectorAll('.switch-theme-button').forEach(button=>{
-    button.addEventListener('click',switchTheme);
-});
 });
 </script>
 </body>
