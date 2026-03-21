@@ -237,6 +237,7 @@ function skipQuestion(){
     timerSound.pause();
     timerSound.currentTime = 0;
 	score++;
+	scoreDisplay.textContent="Бали: "+score;
     const skipSound = new Audio("1540308963_jg-032316-sfx-elearning-correct-answer-sound-3.mp3");
     skipSound.play();
     skipSound.addEventListener('ended', ()=>{
