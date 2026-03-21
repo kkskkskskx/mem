@@ -11,7 +11,7 @@ body {
     background-color: #666666;
 	background-image: url('24.jpg');
 	background-position: center;
-	background-size: auto;
+	background-size: contain;
 	background-repeat: no-repeat;
     color: #fff;
     display: flex;
@@ -72,7 +72,6 @@ button:hover { transform: scale(1.05); box-shadow: 0 0 12px #ffd200; }
 <body>
 <div class="app-container">
     <div id="start-screen" class="screen">
-        <button class="nav-item switch-theme-button">☀️</button>
         <h1>Квіз мемів</h1>
         <button class="start-btn1" id="start-btn">Почати</button>
     </div>
@@ -81,7 +80,7 @@ button:hover { transform: scale(1.05); box-shadow: 0 0 12px #ffd200; }
             <span id="timer">Час: 15</span>
             <span id="score-display">Бали: 0</span>
         </div>
-        <button class="nav-item switch-theme-button">☀️</button>
+
         <h2 id="question-text"></h2>
         <img id="question-image" class="hide" alt="Question image">
         <div id="answers-container"></div>
