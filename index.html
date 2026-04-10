@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Квіз мемів</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+    <div id="start-screen" class="screen">
+        <h1>Квіз мемів</h1>
+        <button class="start-btn1" id="start-btn">Почати</button>
+    </div>
+    <div id="quiz-screen" class="screen hide">
+        <div class="header">
+            <span id="timer">Час: 15</span>
+            <span id="score-display">Бали: 0</span>
+        </div>
+
+        <h2 id="question-text"></h2>
+        <img id="question-image" class="hide" alt="Question image">
+        <div id="answers-container"></div>
+        <button id="skip-btn" class="skip-btn">Пропустити питання</button>
+    </div>
+    <div id="result-screen" class="screen hide">
+        <h2>Квіз завершено!</h2>
+        <p id="result-text"></p>
+        <div id="stats-container" class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Правильні:</span>
+                <span id="correct-count" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Неправильні:</span>
+                <span id="wrong-count" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Час:</span>
+                <span id="time-spent" class="stat-value">0с</span>
+            </div>
+        </div>
+        <button id="restart-btn">Спробувати ще</button>
+    </div>
+    <button id="sound-toggle" class="sound-toggle" title="Вимкнути/Увімкнути звук">
+        🔊
+    </button>
+</div>
+
+<audio id="timer-sound" src="upload/sounds/tick.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
